@@ -1,0 +1,9 @@
+<input type="text" [(ngModel)]="url" />
+<a routerLink="{{ url }}">
+  <button>submit</button>
+</a>
+<a routerLink="/" (click)="url = ''">
+  <button>reset</button>
+</a>
+
+<router-outlet></router-outlet>
